@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
+		<title>URL Shortener Microservice</title>
 		
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
 	</head>
@@ -17,22 +17,25 @@
 
 	<body>
 		<div class="container">
-			<img src="/public/img/clementine_150.png" />
-			<br />
-			<p class="clementine-text">Clementine.js</p>
-		</div>
-	
-		<div class="container">
-			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
-			<br />
-			<div class="btn-container">
-				<button type="submit" class="btn btn-add">CLICK ME!</button>
-				<button class="btn btn-delete">RESET</button>
+			<div class="innerbox">
+
+				<div class="innerstory">
+					<h1>URL Shortener Microservice</h1>					
+					<h2>User Stories:</h2>
+					<ol>
+						<li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+						<li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+						<li>When I visit that shortened URL, it will redirect me to my original link.</li>
+					</ol>
+					<h2>Example Usage</h2>
+					<p class="example">https://url-shortener-alexanderlamm.c9users.io/https://www.google.ca/webhp?hl=en</p>
+					<h2>Example Output</h2>
+						<p class="example">{ "original_url":"https://www.google.ca/webhp?hl=en", "short_url":"" }</p>
+				</div>
 			</div>
 		</div>
-		
+
 		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/clickController.client.js"></script>
 		<script type="text/javascript" src="controllers/userController.client.js"></script>
 	</body>
 

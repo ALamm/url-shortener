@@ -34,9 +34,20 @@ p {
 	margin: 8px 0 0 0;
 }
 
-.container p {
+.container {
 	text-align: center;
 	padding: 0;
+}
+.innerbox {
+	margin:auto;
+	width: 500px;
+	text-align: center;
+}
+.innerstory{
+	text-align: left;
+}
+.example{
+	font-size: 15px;
 }
 
 /****** Header Styling ******/
