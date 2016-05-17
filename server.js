@@ -36,9 +36,9 @@ app.all('*', function(req,res,next) {
     db.on('error', console.error.bind(console, 'connection error:'));
     var collection = db.collection("shortened");
     var result = {};
-	
+    var hostname = "https://url-shortener-alexanderlamm.c9users.io/";	
+    
     // use the node url module to get the req url
-    var hostname = "https://url-shortener-alexanderlamm.c9users.io/";
     var original = url.parse(req.url).pathname;         // get the pathname 
     var str = original.split('').slice(1).join('');  	// remove '/' from beginning of href
     console.log("str: " + str);
