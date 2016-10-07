@@ -38,7 +38,7 @@ app.all('*', function(req,res,next) {
     db.on('error', console.error.bind(console, 'connection error:'));
     var collection = db.collection("shortened");
     var result = {};
-    var hostname = "https://url-shortener-alexanderlamm.c9users.io/";	
+    var hostname = "https://fcc-url-shorten.herokuapp.com/";	
     
     // use the node url module to get the req url
     var original = url.parse(req.url).pathname;         // get the pathname 
